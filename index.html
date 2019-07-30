@@ -3,13 +3,41 @@
   <head>
     <meta charset="utf-8">
     <title>Ajax & JSON</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/jquery-ui-dist/jquery-ui.css">
   </head>
   <body>
-    <h1>Ajax and JSON</h1>
+    <div class="container">
+      <div class="row text-center">
+        <div class="col">
+          <h1>Ajax and JSON</h1>
+        </div>
+      </div>
+      <div class="row text-center mb-3">
+        <div class="col">
+          <button class="btn btn-outline-dark" id="getPeople">Get People</button>
+        </div>
+      </div>
+      <div class="row text-center mb-3">
+        <div class="col">
+          <p>
+            <label for="age">Age Range:</label>
+          </p>
 
-    <button id="getPeople">Get People</button>
+          <p id="currentRange">0 - 100</p>
+
+          <div id="ageRangeSlider"></div>
+        </div>
+      </div>
+
+      <div class="row mb-3" id="peopleContainer">
+      </div>
+    </div>
 
     <script src="node_modules/jquery/dist/jquery.min.js" charset="utf-8"></script>
+    <script src="node_modules/jquery-ui-dist/jquery-ui.min.js" charset="utf-8"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js" charset="utf-8"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js" charset="utf-8"></script>
     <script src="js/script.js" charset="utf-8"></script>
   </body>
 </html>
